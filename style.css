@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background: hsl(0, 0%, 95%);
+}
+main{
+    min-height: 100vh;
+    padding: 4em 1.5em;
+}
+.container > div:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .5em .5em 0 0;
+}
+.container > div:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+.container > div:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 .5em .5em;
+}
+.container > div:nth-child(1),
+.container > div:nth-child(2),
+.container > div:nth-child(3){
+    padding: 2.5em;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    color: #fff;
+    margin: .5em 0;
+    text-transform: uppercase;
+    opacity: 80%;
+}
+p{
+    color: #fff;
+    opacity: 80%;
+    font-size: 1em;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    margin-top: 2em;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.container > div:nth-child(1) button{
+    color: hsl(31, 77%, 52%);
+}
+.container > div:nth-child(1) button:hover{
+    background-color:hsl(31, 77%, 52%);
+    color: #fff;
+    border: 3px solid #fff;
+    transform: translateX(20%);
+}
+.container > div:nth-child(2) button{
+    color: hsl(184, 100%, 22%);
+}
+.container > div:nth-child(2) button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 3px solid #fff;
+    transform: translateX(20%);
+}
+.container > div:nth-child(3) button{
+    color:hsl(179, 100%, 13%);
+}
+.container > div:nth-child(3) button:hover{
+    background-color:hsl(179, 100%, 13%);
+    color: #fff;
+    border: 3px solid #fff;
+    transform: translateX(20%);
+}
+@media screen and (min-width:48rem) {
+    .container{
+        display: flex;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container > div:nth-child(1){
+        border-radius: .5em 0 0 .5em;
+    }
+    .container > div:nth-child(3){
+        border-radius: 0 .5em .5em 0;
+    }
+    button{
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (min-width:77.5rem){
+    main{
+        padding: 10% 20%;
+    }
+    h1{
+        margin: 1em 0;
+        font-size: 2.5em;
+    }
+    button{
+        margin-top: 6em;
+        font-weight: 500;
+    }
+    p{
+        opacity: 70%;
+        line-height: 1.7;
+    }
+
+}
